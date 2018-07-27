@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wdgk.musicbird.MainActivity"
+    android:orientation="vertical"
+    android:id="@+id/main">
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:textColorHighlight="#11120012"
+            android:text="Music_Bird"
+            android:textSize="60dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:textSize="25dp"
+            />
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_height="50dp"
+            android:text="welcome"
+            android:textColor="@color/colorAccent"
+            android:textSize="40dp"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/start_game"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="60dp"
+            android:text="play"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/play_k"
+            android:background="@drawable/button_background_k"/>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="login"
+            android:textSize="30dp"
+            android:src="@drawable/exit_k"
+            android:background="@drawable/button_background_k"/>
+
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="exit"
+            android:textSize="30dp"
+            android:src="@drawable/exit_k"
+            android:background="@drawable/button_background_k"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/viewmusic"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                android:padding="-20dp"
+                android:src="@drawable/music_k" />
+
+            <ImageView
+                android:id="@+id/map"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                android:padding="-20dp"
+                android:src="@drawable/map" />
+
+            <ImageView
+                android:id="@+id/friend"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                android:visibility="gone"
+                android:padding="-20dp"
+                android:src="@drawable/friend" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="17dp"
+        android:src="@drawable/back_k"/>
+</RelativeLayout>
